@@ -1,0 +1,27 @@
+.categories .list-group-item{
+    border: none;
+}
+
+.user-menu .btn{
+    color: #fff;
+    background: #333;
+    margin: 8px;
+}
+
+.signup{
+    color: #fff;
+    background: #333;
+    margin: 8px;
+}
+
+.signin_form{
+    margin: 100px auto;
+}
+
+.expand-info-signin{
+        clear: both;
+      border-top: 1px solid #ccc;
+      margin-top: 60px;
+      font-size: 87%;
+      padding-top: 10px;
+}
