@@ -44,3 +44,11 @@ Route::get('member/forgot_password', array('as' => 'forgot_password', 'before' =
 Route::post('member/do_forgot_password', array('as' => 'do_forgot_password', 'before' => 'is_login|csrf', 'uses' => 'AuthController@doForgotPassword'));
 
 Route::get('member/active/{username}/{code}', array('as' => 'active','before' => 'is_login', 'uses' => 'AuthController@getActiveReset'));
+
+Route::get('create_cate', function(){
+	Category::create(array(
+		'title' => 'CodeIgniter Framework'
+	));
+	
+	return 'Done';
+});
